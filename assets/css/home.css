@@ -68,7 +68,7 @@
     row-gap: 20px;
     flex-wrap: wrap;
     margin-top: 40px;
-    justify-content: start;
+    justify-content: center;
 }
 
 .advantage-item {
@@ -125,12 +125,26 @@
 
 .possibilities-body {
     position: relative;
+    z-index: 2;
 }
 
 .possibilities-decor {
     position: absolute;
     top: -35px;
     left: 0;
+    z-index: -1;
+
+}
+
+.possibilities-btn {
+    margin-top: 60px;
+}
+
+.possibilities-decor-two {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    z-index: -1;
 }
 
 .possibilities-items {
@@ -494,9 +508,10 @@
     margin: 40px auto 0;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     display: none;
 }
+
 @media (max-width: 1400px) {
 }
 
@@ -506,8 +521,6 @@
 }
 
 @media (max-width: 992px) {
-
-
 
 
     .hero-decor {
@@ -521,44 +534,52 @@
 }
 
 @media (max-width: 768px) {
-    .reviews-items{
+    .reviews-items {
         display: none;
     }
-    .reviews-btn-cnt{
+
+    .reviews-btn-cnt {
         display: none;
     }
-    .faq-section{
+
+    .faq-section {
         margin-top: 70px;
     }
-    .faq-body{
+
+    .faq-body {
         flex-direction: column;
         gap: 20px;
     }
-    .reviews-mobile-slider{
+
+    .reviews-mobile-slider {
         display: block;
         margin-top: 30px;
     }
-    .faq-items{
+
+    .faq-items {
         max-width: 100%;
     }
 
-    .swiper-pagination{
+    .swiper-pagination {
         display: flex !important;
         align-items: center;
         position: initial !important;
         justify-content: center;
         margin-top: 30px;
     }
-    .swiper-pagination-bullet{
+
+    .swiper-pagination-bullet {
         width: 5px !important;
         height: 5px !important;
         background-color: rgba(255, 255, 255, 0.3) !important;
         opacity: 1 !important;
     }
-    .reviews-swiper{
+
+    .reviews-swiper {
         padding-bottom: 5px;
     }
-    .swiper-pagination-bullet-active{
+
+    .swiper-pagination-bullet-active {
         width: 7px !important;
         height: 7px !important;
         border: 1px solid rgba(255, 255, 255, 0.6) !important;
@@ -577,12 +598,13 @@
         max-height: max-content;
 
     }
-    .possibilities-items{
+
+    .possibilities-items {
         gap: 30px;
     }
 
 
-    .works-items{
+    .works-items {
         flex-direction: column;
         gap: 30px;
     }
@@ -598,117 +620,139 @@
 }
 
 @media (max-width: 576px) {
-    .advantage-item span{
+    .advantage-item span {
         font-weight: 300;
         font-size: 12px;
         line-height: 15.36px;
         text-align: center;
 
     }
-    .trust-section{
+
+    .trust-section {
         margin-top: 91px;
     }
-    .trust-text{
+
+    .trust-text {
         font-size: 12px;
         line-height: 15.36px;
         text-align: center;
 
     }
-    .trust-media{
+
+    .trust-media {
         max-width: max-content;
         max-height: max-content;
         margin: 30px auto 0;
     }
+
     .trust-bnt {
         margin: 30px auto 0;
     }
+
     .reviews-author-img {
         max-width: 40px;
         height: 40px;
     }
-    .reviews-item-header{
+
+    .reviews-item-header {
         gap: 15px;
     }
-    .faq-item-sub{
+
+    .faq-item-sub {
         font-weight: 300;
         font-size: 10px;
         line-height: 15px;
     }
-    .reviews-author-name{
+
+    .reviews-author-name {
         font-size: 12px;
         line-height: 20.4px;
     }
-    .reviews-author-profession{
+
+    .reviews-author-profession {
         font-size: 10px;
         line-height: 17px;
 
     }
-    .reviews-text{
+
+    .reviews-text {
         font-weight: 300;
         font-size: 10px;
         line-height: 17px;
 
     }
+
     .faq-item-icon::after {
         width: 1.5px;
     }
-    .faq-titles p{
+
+    .faq-titles p {
         max-width: 320px;
     }
 
     .faq-item-icon::before {
         width: 1.5px;
     }
-    .possibilities-item-title{
+
+    .possibilities-item-title {
         font-size: 12px;
         line-height: 15.36px;
         text-align: center;
     }
-    .possibilities-item-header{
+
+    .possibilities-item-header {
         gap: 12px;
     }
-    .possibilities-text-item{
+
+    .possibilities-text-item {
         gap: 20px;
     }
-    .possibilities-item-text{
+
+    .possibilities-item-text {
         margin-top: 10px;
         font-weight: 300;
         font-size: 10px;
         line-height: 15px;
 
     }
+
     .possibilities-icon {
         font-size: 11px;
     }
-    .possibilities-decor{
+
+    .possibilities-decor {
         top: -15px;
     }
-    .advantages-items{
+
+    .advantages-items {
         column-gap: 20px;
         margin-top: 30px;
     }
 
-    .work-item-title{
+    .work-item-title {
         font-size: 12px;
         line-height: 18px;
 
     }
-    .faq-item-header p{
+
+    .faq-item-header p {
         font-size: 12px;
         line-height: 18px;
     }
 
-    .work-item-number{
+    .work-item-number {
         font-size: 12px;
         line-height: 18px;
 
     }
-    .work-item-text{
+
+    .work-item-text {
         font-weight: 300;
         font-size: 10px;
         line-height: 15px;
 
     }
+
     .hero-text {
         font-size: 20px;
         line-height: 25.6px;
@@ -735,14 +779,14 @@
         margin-top: 4px;
         display: block;
     }
-    .advantages-bnt button{
+
+    .advantages-bnt button {
         padding: 9px 15px;
     }
 
     .advantages-logo {
         max-width: 11px;
     }
-
 
 
     .hero-media {
@@ -757,31 +801,40 @@
         padding: 0;
     }
 
-    .advantages-tools{
+    .advantages-tools {
         padding: 15px;
         gap: 15px;
         bottom: 14px;
         border-radius: 9px;
     }
-    .advantage-item{
+
+    .advantage-item {
         gap: 10px;
     }
-    .advantage-item:nth-child(2){
+
+    .advantage-item:nth-child(2) {
         order: 3;
     }
-    .advantage-item:nth-child(4){
+
+    .advantage-item:nth-child(4) {
         order: 2;
     }
-    .advantage-item:nth-child(5){
+
+    .advantage-item:nth-child(5) {
         order: 5;
     }
-    .advantage-item:nth-child(3){
+
+    .advantage-item:nth-child(3) {
         order: 4;
     }
+
     .advantage-icon {
         font-size: 12px;
     }
-    .advantages-bnt{
+    .possibilities-btn{
+        margin-top: 30px;
+    }
+    .advantages-bnt {
         margin-left: 10px;
         padding: 10px 16px;
     }
